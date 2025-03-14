@@ -26,7 +26,7 @@ This Library Management System is a simple console-based C++ application that al
 
 
 2. **Encapsulation**:
-* Data members are private, and accessors (getters/setters) provide controlled access.
+  * Data members are private, and accessors (getters/setters) provide controlled access.
 
 3. **Inheritance**: 
 * Class Student is inherited from  Parent class Member.
