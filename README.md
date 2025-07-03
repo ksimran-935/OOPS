@@ -11,17 +11,15 @@ This Library Management System is a simple console-based C++ application that al
   -Implements book issuance and return functionality.
   -Tracks how many times a book has been borrowed.
 
-* Member
-  -Represents a library member with an ID, name, and contact details.
-  -Provides functions to display member details.
 
-* Student (Derived from Member)
-  -Extends Member with fine calculation for late book returns.
-  -Stores fine per day and number of late days.
+* Student 
+  -Stores Student details like ID, name, contact details.
+  -Stores fine per day and number of late days and calculates fine.
+  -Provides functions to display member details.
 
 * Library
   -Manages collections of books and members.
-  -Handles book issuance, return, and fine calculations.
+  -Handles book issuance and return.
   -Uses file handling for data persistence.
 
 
@@ -29,14 +27,14 @@ This Library Management System is a simple console-based C++ application that al
   * Data members are private, and accessors (getters/setters) provide controlled access.
 
 3. **Inheritance**: 
-* Class Student is inherited from  Parent class Member.
+* Class Book is inherited from  Parent class LibraryItem.
  
 4. **LibraryItem** : 
 * It serves as a base class for Book.
 
 5. **Polymorphism**: 
 * The function displayDetails() is a virtual function in LibraryItem, allowing different implementations in derived classes.
-   * displayMemberInfo() is overridden in Student.
+   * displayMemberInfo() is overridden in class Book.
 
 6. **Abstraction**:
 * LibraryItem class abstracts common functionality for different library items.
